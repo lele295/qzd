@@ -1,0 +1,310 @@
+#about {
+  width: 100%;
+  height: auto;
+}
+#about .about {
+  width: 1102px;
+  height: 827px;
+  margin: 0 auto;
+  background: white;
+}
+#about .about h4 {
+  font-size: 16px;
+  color: #808080;
+  line-height: 50px;
+  padding-left: 23px;
+  border-bottom: 1px solid #aeaeae;
+}
+#about .about .listNum {
+  width: 100%;
+  height: 118px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+#about .about .listNum li {
+  float: left;
+  height: 118px;
+  border-right: 1px solid #ccc;
+}
+#about .about .listNum li .fristP {
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #bdbdbd;
+  font-weight: lighter;
+}
+#about .about .listNum li .lastP {
+  text-align: center;
+  font-size: 16px;
+  line-height: 16px;
+  padding-top: 54px;
+}
+#about .about .listNum li .lastP span {
+  color: #d97489;
+}
+#about .about .listNum .list-1 {
+  width: 248px;
+}
+#about .about .listNum .list-2 {
+  width: 306px;
+}
+#about .about .listNum .list-3 {
+  width: 272px;
+}
+#about .about .listNum .list-4 {
+  width: 272px;
+  border-right: none;
+}
+#about .about .listPic {
+  width: 100%;
+  height: 160px;
+}
+#about .about .listPic li {
+  float: left;
+  padding-left: 30px;
+}
+#about .about .introduce {
+  width: 100%;
+  height: 385px;
+  padding-top: 10px;
+}
+#about .about .introduce p {
+  font-size: 14px;
+  color: #323232;
+  width: 1010px;
+  line-height: 26px;
+  padding-left: 39px;
+  padding-top: 22px;
+  text-indent: 2em;
+}
+#about .about .introduce p span {
+  font-size: 22px;
+  color: #333333;
+}
+#partner {
+  width: 100%;
+  height: auto;
+  padding-top: 22px;
+}
+#partner .partner {
+  width: 1102px;
+  height: 636px;
+  margin: 0 auto;
+  background: white;
+}
+#partner .partner h4 {
+  font-size: 16px;
+  color: #808080;
+  line-height: 50px;
+  padding-left: 23px;
+  border-bottom: 1px solid #aeaeae;
+}
+#partner .partner .haBankLogo {
+  width: 100%;
+  height: 46px;
+  padding-top: 56px;
+}
+#partner .partner .haBankLogo img {
+  display: block;
+  padding-left: 55px;
+}
+#partner .partner .partnerIntro {
+  width: 100%;
+  height: 244px;
+  padding-top: 10px;
+}
+#partner .partner .partnerIntro p {
+  font-size: 14px;
+  color: #323232;
+  width: 1010px;
+  line-height: 26px;
+  padding-left: 39px;
+  padding-top: 22px;
+  text-indent: 2em;
+}
+#partner .partner .performanceTitle {
+  padding-left: 40px;
+  line-height: 24px;
+  color: #333;
+}
+#partner .partner .performance {
+  width: 1062px;
+  padding-left: 40px;
+}
+#partner .partner .performance li {
+  padding-left: 12px;
+  line-height: 24px;
+  background: url(../../img/pcImg/dot.png) left center no-repeat;
+  color: #323232;
+}
+#developHistory {
+  width: 100%;
+  height: auto;
+  padding-top: 22px;
+}
+#developHistory .developHistory {
+  width: 1102px;
+  height: 670px;
+  margin: 0 auto;
+  background: white;
+}
+#developHistory .developHistory h4 {
+  font-size: 16px;
+  color: #808080;
+  line-height: 50px;
+  padding-left: 23px;
+  border-bottom: 1px solid #aeaeae;
+}
+#developHistory .developHistory .historyLine {
+  width: 100%;
+  height: 620px;
+  position: relative;
+}
+#developHistory .developHistory .historyLine img {
+  display: inline-block;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 78px;
+}
+#developHistory .developHistory .historyLine span {
+  color: #323232;
+  display: block;
+  position: absolute;
+}
+#developHistory .developHistory .historyLine span:nth-of-type(1) {
+  left: 628px;
+  top: 84px;
+}
+#developHistory .developHistory .historyLine span:nth-of-type(2) {
+  left: 342px;
+  top: 157px;
+}
+#developHistory .developHistory .historyLine span:nth-of-type(3) {
+  left: 628px;
+  top: 229px;
+}
+#developHistory .developHistory .historyLine span:nth-of-type(4) {
+  left: 342px;
+  top: 302px;
+}
+#developHistory .developHistory .historyLine span:nth-of-type(5) {
+  left: 628px;
+  top: 373px;
+}
+#developHistory .developHistory .historyLine span:nth-of-type(6) {
+  left: 328px;
+  top: 446px;
+}
+#developHistory .developHistory .historyLine span:nth-of-type(7) {
+  left: 628px;
+  top: 517px;
+}
+#contact {
+  width: 100%;
+  height: auto;
+  padding-top: 22px;
+  padding-bottom: 60px;
+}
+#contact .contact {
+  width: 1102px;
+  height: 417px;
+  margin: 0 auto;
+  background: white;
+}
+#contact .contact h4 {
+  font-size: 16px;
+  color: #808080;
+  line-height: 50px;
+  padding-left: 23px;
+  border-bottom: 1px solid #aeaeae;
+}
+#contact .contact .address {
+  width: 100%;
+  height: 84px;
+  padding-top: 36px;
+}
+#contact .contact .address .office {
+  width: 152px;
+  height: 84px;
+  padding-left: 40px;
+  float: left;
+}
+#contact .contact .address .office img {
+  width: 100%;
+}
+#contact .contact .address .addressDetail {
+  padding-left: 22px;
+  width: 888px;
+  height: 84px;
+  float: left;
+}
+#contact .contact .address .addressDetail .companyName {
+  color: #808080;
+  font-size: 18px;
+  line-height: 36px;
+}
+#contact .contact .address .addressDetail .locationName {
+  color: #979797;
+  line-height: 24px;
+}
+#contact .contact .address .addressDetail .locationName span {
+  padding-left: 13px;
+}
+#contact .contact .address .addressDetail .phoneNum {
+  color: #979797;
+  line-height: 24px;
+}
+#contact .contact .listing {
+  width: 100%;
+  height: 210px;
+  padding-top: 30px;
+}
+#contact .contact .listing .listChild {
+  float: left;
+  height: 210px;
+}
+#contact .contact .listing .listChild h5 {
+  font-size: 16px;
+  color: #808080;
+  line-height: 36px;
+  border-bottom: 1px solid #ebebeb;
+}
+#contact .contact .listing .listChild ul {
+  width: 100%;
+  padding-top: 4px;
+}
+#contact .contact .listing .listChild ul li {
+  width: 100%;
+  font-size: 12px;
+  color: #979797;
+  line-height: 22px;
+}
+#contact .contact .listing .listChild ul li:nth-of-type(1) {
+  padding-top: 4px;
+}
+#contact .contact .listing .serve {
+  width: 230px;
+  padding-left: 40px;
+}
+#contact .contact .listing .relation {
+  width: 230px;
+  padding-left: 30px;
+}
+#contact .contact .listing .support {
+  width: 230px;
+  padding-left: 40px;
+}
+#contact .contact .listing .support p {
+  width: 210px;
+  font-size: 12px;
+  color: #979797;
+  line-height: 22px;
+  padding-top: 4px;
+}
+#contact .contact .listing .joinUs {
+  width: 240px;
+  padding-left: 30px;
+}
+/*# sourceMappingURL=companyIntro.css.map */

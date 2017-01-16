@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>nstSlider.js Demo</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="dist/jquery.nstSlider.css">
+
+</head>
+<body>
+
+<div class="nstSlider" data-range_min="3" data-range_max="24" data-cur_min="3">
+    <div class="bar"></div>
+    <div class="leftGrip"></div>
+</div>
+<div class="leftLabel"></div>
+
+<script src="../http_code.jquery.com_jquery-2.0.0.js"></script>
+<script src="dist/jquery.nstSlider.min.js"></script>
+<script>
+    $('.nstSlider').nstSlider({
+        "rounding":{ '3' : '12', '6' : '24' },
+        "left_grip_selector": ".leftGrip",
+        "value_bar_selector": ".bar",
+        "value_changed_callback": function(cause, Value) {
+            var $container = $(this).parent(),g = 255 -102 - Value,r = 255,b = 0;
+            $container.find('.leftLabel').text(Value);
+            console.log(Value);
+            $(this).find('.bar').css('background', 'rgb(' + [r, g, b].join(',') + ')');
+        }
+    });
+</script>
+</body>
+</html>

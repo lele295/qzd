@@ -1,0 +1,807 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  font-size: 100px;
+  font-family: "微软雅黑";
+  background: #eaeaea;
+}
+ul,ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+i{
+    font-style: normal;
+}
+input{
+    border:none;
+    outline: none;
+    font-size: 0.24rem;
+}
+@font-face {font-family: 'iconfont';
+    src: url('../../iconfontbag/iconfont.eot'); /* IE9*/
+    src: url('../../iconfontbag/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../../iconfontbag/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../../iconfontbag/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../../iconfontbag/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    }
+ 
+ .nextBtn{
+    display: block;
+    width:6rem;
+    height:0.9rem;
+    margin: 0 auto;
+    background: #dc6a81;
+    border-radius: 0.44rem;
+    text-align: center;
+    color: white;
+    font-size: 0.34rem;
+    line-height: 0.9rem;
+    margin-top:0.4rem;
+}
+ 
+ //commom header css
+.header{
+    width:100%;
+    height: 0.9rem;
+    background: #201f24;
+    position: fixed;
+    left:0;
+    top: 0;
+    z-index: 99;
+    #backBtn{
+        display: block;
+        width:1rem;
+        height:0.24rem;
+        font-size: 0.24rem;
+        line-height:0.24rem;
+        padding-left:0.18rem;
+        padding-top:0.3rem;
+        color: white;
+        float: left;
+    }
+    h1{
+        width:4.0rem;
+        height:0.9rem;
+        line-height: 0.9rem;
+        color: white;
+        font-size:0.34rem;
+        text-align: center;
+        float: left;
+    }
+    .rightSpan{
+        display: block;
+        width:0.43rem;
+        line-height:0.9rem;
+        padding-right:0.15rem;
+        font-size: 0.4rem;
+        color: white;
+        float: right;
+    }
+}
+
+ .content{
+    width:100%;
+    height:auto;
+    position: absolute;
+    top:0.9rem;
+    left:0;
+    .secondHeader{
+        width:100%;
+        height:0.8rem;
+        background:#db6a7e;
+        .backRound{
+            display: block;
+            width:0.58rem;
+            line-height: 0.8rem;
+            text-align: right;
+            font-size: 0.4rem;
+            color:white;
+            float:left;
+        }
+        h2{
+            float:left;
+            color: white;
+            font-size:0.34rem;
+            width:100%;
+            line-height: 0.8rem;
+            text-align: center;
+        }
+    }
+}   
+
+#login{
+    width:100%;
+    height: auto;
+    position:relative;
+    .logo{
+        width:100%;
+        height: auto;
+        text-align: center;
+        padding-top:0.64rem;
+        background: white;
+         img{
+            width:3.34rem;
+        }
+    }
+   form{
+       width:100%;
+       height:auto;
+       padding-bottom: 0.45rem;
+       background: white;
+       .column{
+           width:6rem;
+           height:0.44rem;
+           font-size: 0.26rem;
+           margin:0 auto;
+           span{
+               display: block;
+               width:1.5rem;
+               line-height: 0.44rem;
+               text-align: right;
+               float: left;
+           }
+       }
+       .empty{
+           width:6rem;
+           height: 0.1rem;
+           margin: 0 auto;
+           border: 1px solid #b7b7b7;
+           border-top:none;
+       }
+       .merNum{
+           padding-top: 0.54rem;
+           .select{
+               width:3.8rem;
+               height: 0.44rem;
+               float: left;
+               line-height: 0.44rem;
+               color:#c8c8c8;
+               padding-left: 0.15rem;
+               position: relative;
+               input{
+                   width: 100%;
+                   line-height: 0.44rem;
+                   font-family: "微软雅黑";
+                   color: #c8c8c8;
+
+               }
+               ul{
+                   display: none;
+                   position: absolute;
+                   right:-0.2rem;
+                   top:0.54rem;
+                   width:4.2rem;
+                   height:auto;
+                   border: 1px solid #B7B7B7;
+                   li{
+                       width:100%;
+                       line-height: 0.4rem;
+                       padding-left: 0.2rem;
+                       border-bottom: 1px solid #B7B7B7;
+                       z-index: 99;
+                       background: #ccc;
+                       color: white;
+                   }
+               }   
+           }
+           .arrow{
+               display: block;
+               width:0.4rem;
+               float: left;
+               font-size: 0.3rem;
+               line-height: 0.5rem;
+               font-weight: bolder;
+               color: #999;
+           }
+       }
+       .legalNum{
+           padding-top: 0.3rem;
+           input{
+               width:4.35rem;
+               line-height: 0.44rem;
+               padding-left: 0.15rem;
+               font-family: "微软雅黑";
+               color: #c8c8c8;
+           }
+       }   
+   }
+   .explain{
+       width:100%;
+       text-align: center;
+       font-size: 0.22rem;
+       line-height: 0.54rem;
+       color: #787878;
+   }
+}
+.loginSuccess{
+       width:100%;
+       height:100%;
+       position: absolute;
+       top:0;
+       left:0;
+       z-index: 99;
+       background: rgba(0,0,0,0.8);
+       display: none;
+       .succWindow{
+           width:5.2rem;
+           height:auto;
+           margin: 0 auto;
+           margin-top:2.8rem;
+           h4{
+               width:100%;
+               height: 0.8rem;
+               line-height: 0.8rem;
+               font-size: 0.28rem;
+               background: #DC6A81;
+               text-align: center;
+           }
+           p{
+               background: white;
+           }
+           .icon{
+               width:100%;
+               padding-top: 0.18rem;
+               text-align: center;
+               font-size: 0.85rem;
+               line-height: 1.6rem;
+               
+               color: #85d8ce;
+           }
+           .txt{
+               width:100%;
+               text-align: center;
+               line-height: 0.36rem;
+               font-size: 0.22rem;
+               color: #787878;
+               padding-bottom: 0.9rem;
+           }
+           .del{
+               background: none;
+               width:100%;
+               text-align: center;
+               line-height: 0.8rem;
+               font-size: 0.4rem;
+               color: white;
+               font-weight: lighter;
+           }
+       }
+   }
+
+
+#infromation{
+    .headPhoto{
+        width:100%;
+        height:2.8rem;
+        padding-top: 0.4rem;
+        background: #DC6A81;
+        .head{
+            width:1.4rem;
+            height:1.4rem;
+            border-radius: 50%;
+            border:0.18rem solid #e498a4;
+            background:white;
+            margin: 0 auto;
+            font-size: 0.6rem;
+            line-height: 1.4rem;
+            text-align: center;
+            color: #e3e3e3;
+        }
+        .ueserName{
+            width:100%;
+            text-align: center;
+            line-height: 0.56rem;
+            font-size: 0.26rem;
+            color: white;
+        }
+        .complete{
+            width:2.3rem;
+            height:0.4rem;
+            margin: 0 auto;
+            background: rgb(230,154,167);
+            font-size: 0.24rem;
+            line-height: 0.4rem;
+            text-align: center;
+            border-radius: 0.2rem;
+            i{
+                font-size: 0.26rem;
+                color: #70ae25;
+            }
+        }
+    }
+
+    .details{
+        width:100%;
+        height: auto;
+        margin-top: 0.1rem;
+        ul{
+            width:100%;
+            height: auto;
+            li{
+                width:100%;
+                height: 0.9rem;
+                font-size: 0.3rem;
+                border-bottom:1px solid #B7B7B7 ;
+                background: white;
+                img{
+                    display: block;
+                    width:0.5rem;
+                    float: left;
+                    padding-left: 0.2rem;
+                    padding-top: 0.2rem;
+                }
+                .title{
+                    padding-left: 0.2rem;
+                    width:1.8rem;
+                    line-height: 0.9rem;
+                    float: left;
+                    display: block;
+                    
+                }
+                .rightArrow{
+                    display: block;
+                    width:1rem;
+                    float:right;
+                    line-height: 0.9rem;
+                    font-size: 0.3rem;
+                    padding-left: 0.2rem;
+                    text-align: right;
+                }
+            }
+            li:nth-of-type(2){
+                margin-top: 0.1rem;
+            }
+            li:nth-of-type(5){
+                margin-top: 0.1rem;
+            }
+        }
+    }
+    .outLogin{
+        background: rgb(179,179,179);
+    }
+}
+
+#listBox{
+    width:100%;
+    height: auto;
+    .secondHeader{
+        h2{
+            width:5.24rem;
+        }
+    }
+    .emptyBox{
+        width:100%;
+        height: auto;
+        background:white;
+        position: absolute;
+        left: 0;
+        top: 0.8rem;
+        z-index: 3;
+        img{
+            display: inline-block;
+            width:0.9rem;
+            padding-top: 1.2rem;
+            padding-left: 2.75rem;
+        }
+        p{
+            width:100%;
+            text-align: center;
+            font-size: 0.24rem;
+            line-height: 0.8rem;
+            color: #999;
+        }
+    }
+    .box{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: 0;
+        top: 0.8rem;
+        z-index: 99;
+//      display: none;
+        .list{
+            width: 100%;
+            height: auto;
+            background: white;
+            margin-bottom:0.18rem ;
+            .type{
+                width: 100%;
+                height:0.48rem;
+                padding-top: 0.19rem;
+                padding-bottom: 0.19rem;
+                border-bottom: 1px solid #B7B7B7;
+                .hospitalName{
+                    width: 4.8rem;
+                    height: 0.48rem;
+                    line-height: 0.48rem;
+                    font-size: 0.26rem;
+                    float: left;
+                    padding-left: 0.2rem;
+                }
+                .audit{
+                    width: 1.2rem;
+                    line-height: 0.48rem;
+                    text-align: center;
+                    float: left;
+                    color: white;
+                    font-size: 0.22rem;
+                    background: rgb(181,181,181);
+                    border-radius: 0.2rem;
+                }
+            }
+            .infro{
+                width: 100%;
+                height: 1.24rem;
+                padding-top: 0.2rem;
+                padding-bottom: 0.2rem;
+                .left{
+                    width: 1.24rem;
+                    height: 1.24rem;
+                    float: left;
+                    padding-left:0.2rem;
+                    img{
+                        display: block;
+                        width: 1.24rem;
+                    }
+                }
+                .right{
+                    width:3.5rem;
+                    height: 1.24rem;
+                    float: left;
+                    padding-left: 0.2rem;
+                    p{
+                        width: 100%;
+                        line-height: 0.4rem;
+                        font-size: 0.22rem;
+                        color: #979797;  
+                    }
+                    p:nth-of-type(1){
+                        font-size: 0.24rem;
+                        color: #1e1e1e;
+                    }
+                    p:nth-of-type(2){
+                        span{
+                            color: #DC6A81;
+                        }
+                    }
+                    p:nth-of-type(3){
+                        span{
+                            color: #85D8CE;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+#infromations{
+    background: white;
+    .secondHeader{
+        h2{
+            width: 5.24rem;
+        }
+    }
+    .column{
+        width:100%;
+        height: 0.9rem;
+        border-bottom: 1px solid #B7B7B7;
+        img{
+            display: inline-block;
+            float: left;
+            width: 0.5rem;
+            padding-left:0.2rem;
+            padding-top: 0.2rem;
+        }
+        .name{
+            display: block;
+            width:2.10rem;
+            float: left;
+            font-size: 0.3rem;
+            line-height: 0.9rem;
+            padding-left: 0.2rem;
+        }
+        .right{
+            display: block;
+            float: right;
+            width:2rem;
+            text-align: right;
+            font-size: 0.3rem;
+            padding-right: 0.2rem;
+            line-height: 0.9rem;
+        }
+    }
+    
+    ul{
+        width:100%;
+        height: auto;
+//      background: white;
+        display:none;
+        li{
+            width:100%;
+            height: 0.7rem;
+            margin: 0 auto;
+            border-bottom: 1px solid #B7B7B7;
+            
+            span{
+                display: block;
+                font-size: 0.24rem;
+                color: #969696;
+            }
+            .leftIn{
+                float: left;
+                line-height: 0.7rem;
+                width:1.5rem;
+                padding-left: 0.9rem;
+            }
+            .rightIn{
+                width:3.8rem;
+                line-height: 0.7rem;
+                float: right;
+                text-align: right; 
+                padding-right: 0.2rem;
+            }
+        }
+        .empty{
+            width:100%;
+            height: 0.1rem;
+            background: #eaeaea;
+        }
+    }
+    .photo{
+        width:100%;
+        display: none;
+        .photoEare{
+            width:1.6rem;
+            height: 2.4rem;
+            float: left;
+            padding-top:0.34rem;
+            padding-bottom:0.36rem;
+            .img{
+                width: 1.6rem;
+                height: 1.6rem;
+               img{
+                   width: 100%;
+               }
+            }
+            span{
+                display: block;
+                width: 1.6rem;
+                height: 0.5rem;
+                line-height: 0.5rem;
+                background: #DC6A81;
+                text-align: center;
+                color: white;
+                font-size: 0.22rem;
+                border-radius: 0.2rem;
+                margin-top: 0.27rem;
+            }
+        }
+        .idCardFace{
+            padding-left: 0.9rem;
+        }
+        .idCardBack{
+            padding-left: 1.4rem;
+        }
+        .empty{
+            width:100%;
+            height: 0.1rem;
+            background: #eaeaea;
+            clear: both;
+        }
+        
+    }
+}
+
+
+#repay{
+    .secondHeader{
+        h2{
+            width: 5.24rem;
+        }
+    }
+    .repayDetails{
+        width: 100%;
+        height: 2.4rem;
+        background: rgb(236,116,135);
+        .repayTop{
+            width: 6rem;
+            height: 1.08rem;
+            margin: 0 auto;
+            padding-top: 0.33rem;
+            padding-bottom: 0.22rem;
+            .leftS{
+                display: block;
+                width:1.5rem;
+                line-height: 0.8rem;
+                margin-top: 0.18rem;
+                float: left;
+                font-size: 0.28rem;
+                color: white;
+                text-align: center;
+                background: url(../../img/wxkhd/borderLine.png) right center no-repeat;
+            }
+            .rightCon{
+                width: 4.5rem;
+                height:1.08rem ;
+                float: left;
+                p{
+                    width: 100%;
+                    height: 0.54rem;
+                    font-size: 0.22rem;
+                    color: white;
+                     span{
+                        display: block;
+                        float: left;
+                        width: 2rem;
+                        line-height: 0.54rem;
+                        padding-left: 0.25rem;
+                        i{
+                            font-style: normal;
+                        }
+                    }
+                }
+            }
+        }
+        .repayWay{
+            width: 6rem;
+            height: 0.54rem;
+            margin: 0 auto;
+            background: rgb(255,195,205);
+            border-radius: 5px;
+            color: #DB6A7E;
+            span{
+                display: block;
+                float: left;
+                width: 2.45rem;
+                line-height: 0.54rem;
+                font-size: 0.22rem;
+                padding-left: 0.55rem;
+            }
+        }
+    }
+    .details{
+        width:6rem;
+        height: 0.8rem;
+        margin: 0 auto;
+        span{
+            display: block;
+            width:1.5rem;
+            float: left;
+            line-height: 0.8rem;
+            font-size: 0.24rem;
+        }
+        a{
+            display: block;
+            width:2rem;
+            line-height: 0.8rem;
+            float: right;
+            font-size: 0.24rem;
+            color: #979797;
+            text-align: right;
+        }
+    }
+    ul{
+        width: 100%;
+        height: auto;
+        li{
+            width:100%;
+            height: 1.21rem;
+            margin: 0 auto;
+            margin-bottom: 0.19rem;
+            background: url(../../img/wxkhd/repay.png) rgb(224,222,223) 5.2rem center no-repeat;
+            background-size:1.03rem ;
+            span{
+                display: block;
+                float: left;
+                font-size: 0.24rem;
+                
+            }
+            .per{
+                width:0.9rem;
+                padding-left: 0.2rem;
+                line-height: 1.21rem;
+                color: #7b797a;
+                text-align: center;
+            }
+            .time{
+                width: 0.7rem;
+                height: 0.4rem;
+                line-height: 0.4rem;
+                border: 1px solid #85D8CE;
+                margin-left: 0.2rem;
+                border-radius: 0.1rem;
+                margin-top: 0.4rem;
+                color: #aaa8a9;
+                i{
+                    color: #85D8CE;
+                }
+            }
+            .price{
+                width: 1rem;
+                padding-left: 2.2rem;
+                line-height: 1.21rem;
+                color: #cd9faa;
+            }
+        }
+        li:nth-of-type(3){
+            background: url(../../img/wxkhd/repayed.png) rgb(255,255,255) 5.2rem center no-repeat;
+            background-size:1.03rem ;
+        }
+    }
+}
+
+
+#withHold{
+    .secondHeader{
+        h2{
+            width: 5.24rem;
+        }
+    }
+    .goodsList{
+        width: 100%;
+        height: auto;
+        ul{
+            width:100%;
+            height: auto;
+            li{
+                width:100%;
+                height: 1.6rem;
+                margin-top: 0.18rem;
+                background: url(../../img/wxkhd/xiala.png) white right center no-repeat;
+                background-size: 0.42rem;
+                .left{
+                    width: 1.7rem;
+                    height: 1.6rem;
+                    float: left;
+                    background: url(../../img/wxkhd/overdue.png) center center no-repeat;
+                    background-size: 100% 100%;
+                }
+                .right{
+                    width:4.6rem;
+                    height: 1.6rem;
+                    float: left;
+                    p{
+                        width: 4.6rem;
+                        padding-left: 0.15rem;
+                    }
+                    .serveType{
+                        padding-top: 0.24rem;
+                        line-height: 0.42rem;
+                        font-size: 0.26rem;
+                    }
+                    .loanAmount{
+                        line-height: 0.4rem;
+                        font-size: 0.22rem;
+                        color: #959595;
+                        span:nth-of-type(2){
+                            padding-left: 0.2rem;
+                        }
+                    }
+                    .monthPay{
+                        line-height: 0.4rem;
+                        font-size: 0.22rem;
+                        color: #959595;
+                        span:nth-of-type(2){
+                            padding-left: 0.2rem;
+                            color: #DC6A81;
+                        }
+                    }
+                }  
+            }
+        }
+    }
+}

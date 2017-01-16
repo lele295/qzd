@@ -1,0 +1,176 @@
+#banner {
+  width: 100%;
+  height: 445px;
+  background: url(../../img/pcImg/banner.jpg) center center no-repeat;
+  background-size:cover;
+}
+#proIntro {
+  width: 100%;
+  height: auto;
+  background: #f5f5f5;
+}
+#proIntro .proIntro {
+  width: 1102px;
+  height: 481px;
+  margin: 0 auto;
+  padding-bottom: 70px;
+}
+#proIntro .proIntro h3 {
+  width: 100%;
+  height: 193px;
+  text-align: center;
+  line-height: 193px;
+  font-size: 48px;
+  color: #3a3a3a;
+}
+#proIntro .proIntro ul li {
+  float: left;
+  width: 240px;
+  height: 288px;
+  margin-left: 47px;
+  text-align: center;
+}
+#proIntro .proIntro ul li img {
+  padding-top: 55px;
+  padding-bottom: 36px;
+}
+#proIntro .proIntro ul li .lastImg {
+  padding-bottom: 28px;
+}
+#proIntro .proIntro ul li p {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+}
+#proIntro .proIntro ul .list1 {
+  margin-left: 0;
+  background: #f2aea5;
+}
+#proIntro .proIntro ul .list2 {
+  background: #f2c5b2;
+}
+#proIntro .proIntro ul .list3 {
+  background: #faaac5;
+}
+#proIntro .proIntro ul .list4 {
+  background: #eba1b0;
+}
+#service {
+  width: 100%;
+  height: auto;
+  background: white;
+}
+#service .service {
+  width: 1102px;
+  height: 588px;
+  margin: 0 auto;
+}
+#service .service h3 {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  font-size: 48px;
+  color: #3a3a3a;
+}
+#service .service ul {
+  width: 1082px;
+  height: 308px;
+  padding-left: 20px;
+}
+#service .service ul li {
+  float: left;
+  width: 221px;
+  height: 308px;
+  text-align: center;
+}
+#service .service ul li p {
+  width: 100%;
+  font-size: 16px;
+  color: #646464;
+  line-height: 86px;
+}
+#service .service ul .arrow {
+  width: 25px;
+  line-height: 245px;
+  padding-left: 95px;
+  padding-right: 77px;
+}
+#manage {
+  width: 100%;
+  height: auto;
+  background: #F5F5F5;
+}
+#manage .manage {
+  width: 1102px;
+  height: 570px;
+  margin: 0 auto;
+}
+#manage .manage h3 {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  font-size: 48px;
+  color: #3a3a3a;
+}
+#manage .manage .manage-condition {
+  width: 524px;
+  height: 316px;
+}
+#manage .manage .manage-condition .left {
+  width: 261px;
+  height: 316px;
+  float: left;
+  text-align: center;
+}
+#manage .manage .manage-condition .left img {
+  padding-top: 90px;
+}
+#manage .manage .manage-condition .left p {
+  font-size: 26px;
+  color: white;
+  line-height: 90px;
+}
+#manage .manage .manage-condition .apply {
+  background: #f6bb6f;
+}
+#manage .manage .manage-condition .file {
+  background: #94b4ed;
+}
+#manage .manage .manage-condition ul {
+  float: right;
+  width: 261px;
+  height: 314px;
+  border: 1px solid #f6bb6f;
+}
+#manage .manage .manage-condition ul li {
+  display: block;
+  width: 260px;
+  height: 156px;
+  background: #f5f5f5;
+  position: relative;
+}
+#manage .manage .manage-condition ul li img {
+  position: absolute;
+  top: 69px;
+  left: 48px;
+}
+#manage .manage .manage-condition ul li p {
+  padding-left: 115px;
+  line-height: 129px;
+  padding-top: 28px;
+  font-size: 20px;
+  color: #525252;
+}
+#manage .manage .manage-condition ul .frist {
+  border-bottom: 1px solid #f6bb6f;
+}
+#manage .manage .manage-left {
+  float: left;
+}
+#manage .manage .manage-right {
+  float: right;
+}
+/*# sourceMappingURL=proIntro.css.map */

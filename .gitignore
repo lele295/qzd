@@ -1,0 +1,12 @@
+﻿/config/myconfig.php
+/config/database.php
+/config/wx.php
+/vendor
+/storage
+.buildpath
+.settings
+.project
+aa.txt
+
+
+

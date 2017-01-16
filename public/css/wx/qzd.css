@@ -1,0 +1,1869 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  font-family: "微软雅黑";
+  background: #eaeaea;
+  -webkit-text-size-adjust: 100% !important;
+}
+html,
+body ::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+ul,
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.clearfix{
+  clear: both;
+  height: 0;
+}
+input {
+  border: none;
+  outline: none;
+  font-size: 0.24rem;
+  -webkit-appearance: none;
+  appearance:none;
+  background: none;
+  -webkit-tap-highlight-color:rgba(0,0,0,0)
+}
+input::-webkit-input-placeholder{
+    color:#bebebe;
+}
+
+i {
+  font-style: normal;
+}
+@font-face {
+    font-family: 'iconfont';
+    src: url('../../iconfontbag/iconfont.eot');/* IE9*/
+    src: url('../../iconfontbag/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../../iconfontbag/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../../iconfontbag/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../../iconfontbag/iconfont.svg#iconfont') format('svg');/* iOS 4.1- */
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.nextBtn {
+  display: block;
+  width: 6rem;
+  height: 0.9rem;
+  margin: 0 auto;
+  background: #ccc;
+  border-radius: 0.1rem;
+  text-align: center;
+  color: white;
+  font-size: 0.34rem;
+  font-family: "微软雅黑";
+  line-height: 0.9rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+.content {
+  width: 100%;
+  height: auto;
+  /*overflow:scroll;*/
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.content .secondHeader {
+  width: 100%;
+  height: 0.8rem;
+  background: #db6a7e;
+  position: relative;
+}
+/*.content .secondHeader .backRound {
+  display: block;
+  width: 0.58rem;
+  line-height: 0.8rem;
+  text-align: right;
+  font-size: 0.4rem;
+  color: white;
+  position: absolute;
+   left: 0;
+    top: 0;
+}
+.content .secondHeader h2 {
+  width: 100%;
+  color: white;
+  font-size: 0.34rem;
+  line-height: 0.8rem;
+  text-align: center;
+}*/
+.titleCom {
+  width: 100%;
+  height: .9rem;
+}
+.titleCom p{
+  width: 100%;
+  height: .8rem;
+  line-height: .8rem;
+  padding-top: 0.1rem;
+  letter-spacing: .03rem;
+  font-size: .22rem;
+  color: #ea216a;
+}
+.titleCom p span{
+  display: block;
+  float: left;
+}
+.titleCom p .logoPic{
+  width: .5rem;
+  height: .78rem;
+}
+.titleCom p .iconPic {
+  background: url(../../img/wxSecond/pic.png) center right no-repeat;
+  background-size:.3rem .25rem;
+}
+.titleCom p .iconInstal {
+  background: url(../../img/wxSecond/fenqixinx.png) center right no-repeat;
+  background-size:.3rem .25rem;
+}
+.titleCom p .iconWork {
+  background: url(../../img/wxSecond/work.png) center right no-repeat;
+  background-size:.3rem .25rem;
+}
+.titleCom p .iconBank {
+  background: url(../../img/wxSecond/bankCard.png) center right no-repeat;
+  background-size:.3rem .25rem;
+}
+.titleCom p .iconPerson {
+  background: url(../../img/wxSecond/preson.png) center right no-repeat;
+  background-size:.3rem .25rem;
+}
+.titleCom p .title{
+  padding-left: .1rem;
+}
+.star{
+  color: #ea216a;
+}
+#content .myForm {
+  width: 100%;
+  height: auto;
+}
+#content .myForm .column {
+  width: 100%;
+  height: 0.9rem;
+  background-color: white;
+  border-bottom: 0.02rem solid #eaeaea;
+}
+#content .myForm .column span {
+  display: block;
+  width: 1.4rem;
+  line-height: 0.9rem;
+  float: left;
+  padding-left: 0.2rem;
+  font-size: 0.24rem;
+}
+#content .myForm .column input {
+  width: 4.4rem;
+  height: 0.9rem;
+  font-size: 0.24rem;
+  appearance: none;
+  border: none;
+  float: left;
+  padding-left: 0.2rem;
+  outline: none;
+  color: #B7B7B7;
+}
+#content .myForm .column #monthPay {
+	width: 2.8rem;
+	height: .9rem;
+	font-size: 0.24rem;
+	line-height: .9rem;
+  border: none;
+  float: left;
+  margin-left: 0.2rem;
+  outline: none;
+  color: #B7B7B7;
+}
+#content .myForm .column #countBtn {
+	width: 1.6rem;
+	height: .5rem;
+	font-size: 0.24rem;
+  appearance: none;
+  border: none;
+  float: left;
+  padding-left: 0;
+  /*padding-top: .4rem;*/
+  margin-top: .2rem;
+  outline: none;
+  color: #f7d568;
+  /*background: #83D9D0;*/
+  border: 1px solid #f7d568;
+  border-radius: .04rem;
+  letter-spacing: .01rem;
+}
+#content .myForm .column .select {
+  background: url(../../img/wx/selectArrow.png) right center no-repeat;
+  background-size: 0.14rem;
+  font-size: 0.24rem;
+}
+#content .myForm .column #profession {
+  background: url(../../img/wx/selectArrow.png) right center no-repeat;
+  background-size: 0.14rem;
+}
+
+#content .myForm .loanTimes .loanNum {
+    position: relative;
+}
+#content .myForm .loanTimes .loanNum{
+    width: 4.4rem;
+    height: 0.9rem;
+    float: left;
+    position: relative;
+}
+#content .myForm .loanTimes .loanNum select{
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+    position: absolute;
+    left: 0.2rem;top: 0.25rem;
+    width: 4.4rem;
+    height: 0.4rem;
+    font-size: 0.24rem;
+    color: #bebebe;
+    background: url(../../img/wx/selectArrow.png) right center no-repeat;
+    background-size: 0.14rem;
+}
+#content .myForm .serveClass {
+  position: relative;
+}
+#content .myForm .serveClass .serveType{
+    width: 4.4rem;
+    height: 0.9rem;
+    float: left;
+    padding-left: 0.2rem;
+    position: relative;
+}
+#content .myForm .serveClass .serveType select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    position: absolute;
+    left: 0.2rem;top: 0.25rem;
+    width: 4.28rem;
+    height: 0.4rem;
+    font-size: 0.24rem;
+    color: #bebebe;
+    background: url(../../img/wx/selectArrow.png) right center no-repeat;
+    background-size: 0.14rem;
+}
+#content .myForm .profession {
+  position: relative;
+}
+#content .myForm .repayMode {
+  margin-top: .2rem;
+  position: relative;
+}
+#content .myForm .repayMode select{
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+    /*position: absolute;
+    left: 0.2rem;top: 0.25rem;*/
+   	display: block;
+    float: left;
+    margin-top: .24rem;
+    padding-left: .2rem;
+    width: 4.6rem;
+    height: 0.4rem;
+    font-size: 0.24rem;
+    color: #bebebe;
+    background: url(../../img/wx/selectArrow.png) right center no-repeat;
+    background-size: 0.14rem;
+}
+#content .myForm .operation_contractPic {
+  width: 100%;
+  height: 1.5rem;
+  background: white;
+  position: relative;
+}
+#content .myForm .operation_contractPic .add {
+  position: absolute;
+  top: .4rem;
+  left: .2rem;
+  width: .8rem;
+  height: .8rem;
+  background: #dcdcdc;
+  font-size: .24rem;
+  line-height: 0.8rem;
+  text-align: center;
+  color: #969696;
+  position: relative;
+}
+.add img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+#content .myForm .nextBtn {
+  margin-top: .55rem;
+  //background: rgb(188,188,188);
+}
+
+.operation_tips{
+    padding-left: .55rem;
+    height:.56rem;
+    line-height: .56rem;
+    font-size: .22rem;
+    background: url(../../img/wxSecond/tan.png) #fff no-repeat .2rem .15rem;
+    background-size:.24rem .24rem;
+    color: #fea745;
+    border-top: 0.02rem solid #eaeaea;
+}
+
+
+
+#passwords .pass {
+  width: 100%;
+  height: auto;
+}
+#passwords .pass span {
+  display: block;
+  font-size: 0.24rem;
+}
+#passwords .pass .approve {
+  width: 100%;
+  height: 0.8rem;
+  padding-top: .1rem;
+  background: #eaeaea;
+}
+#passwords .pass .approve #rightIcon {
+  display: block;
+  width: .6rem;
+  letter-spacing: 0.03rem;
+  padding-left: .2rem;
+  line-height: 0.76rem;
+  float: left;
+  color: #ea216a;
+}
+#passwords .pass .approve .tbLogo {
+  display: block;
+  width: .6rem;
+  letter-spacing: 0.03rem;
+  padding-left: .2rem;
+  height: 0.76rem;
+  float: left;
+  background: url(../../img/wxSecond/tbLogo.jpg) center right no-repeat ;
+  background-size: .6rem .22rem;
+}
+#passwords .pass .approve #left {
+  display: block;
+  width: 3rem;
+  letter-spacing: 0.03rem;
+  padding-left: .15rem;
+  line-height: 0.8rem;
+  float: left;
+  color: #ea216a;
+}
+#passwords .pass .userinfo {
+  width: 100%;
+  height: 2.2rem;
+  background: white;
+}
+/*#passwords .pass .userinfo p {
+  padding-top: 0.1rem;
+  padding-left: 0.39rem;
+  font-size: 0.24rem;
+  line-height: 0.8rem;
+  color: #959595;
+}*/
+#passwords .pass .userinfo .name {
+  width: 6rem;
+  height: 0.6rem;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 0.3rem;
+  border-bottom: 1px solid #ccc;
+}
+#passwords .pass .userinfo .name span {
+  width: 1.1rem;
+  height: .6rem;
+  line-height: 0.6rem;
+  display: block;
+  float: left;
+  padding-left: 0.4rem;
+  text-align: right;
+  font-size: 0.26rem;
+}
+#passwords .pass .userinfo .name input {
+  display: block;
+  width: 3.8rem;
+  height: 0.6rem;
+  line-height: .6rem;
+  float: left;
+  font-size: 0.26rem;
+  outline: none;
+  border: none;
+  padding-left: 0.2rem;
+}
+#passwords .pass .userinfo .word {
+  width: 6rem;
+  height: 0.6rem;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 0.2rem;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+#passwords .pass .userinfo .word .changeType {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: .5rem;
+    height: .5rem;
+    background: url(../../img/wxSecond/openPass.png) center center no-repeat;
+    background-size: .36rem .24rem;
+}
+#passwords .pass .userinfo .word span {
+  width: 1.1rem;
+  height: .6rem;
+  line-height: 0.6rem;
+  display: block;
+  float: left;
+  padding-left: 0.4rem;
+  text-align: right;
+  font-size: 0.26rem;
+}
+#passwords .pass .userinfo .word input {
+  display: block;
+  width: 3.8rem;
+  height: 0.6rem;
+  line-height: .6rem;
+  float: left;
+  font-size: 0.26rem;
+  outline: none;
+  border: none;
+  padding-left: 0.2rem;
+}
+.butComfire{
+    margin-top: .5rem;
+    margin-bottom: 0;
+}
+#passwords .noCer{
+  width: 1.3rem;
+  height: .7rem;
+  float: right;
+  padding-right: .2rem;
+  line-height: .7rem;
+  font-size:.22rem;
+}
+#passwords .noCer a{
+  color: #969696;
+  text-decoration: underline;
+}
+.errorC{
+    width: 100%;
+    height: 0.6rem;
+}
+#errMsg{
+    width: 100%;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    text-align: center;
+    font-size: 0.24rem;
+    color: red;
+}
+#workInfo form {
+  width: 100%;
+  height: auto;
+    margin-bottom: .4rem;
+}
+#workInfo form .explain {
+  width: 6rem;
+  font-size: 0.22rem;
+  line-height: 0.8rem;
+  color: #949494;
+  padding-left: 0.2rem;
+}
+#workInfo form .worker {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background: white;
+}
+#workInfo form .worker .column {
+  width: 100%;
+  height: 0.85rem;
+  font-size: 0.24rem;
+  border-bottom: 1px solid #eaeaea;
+}
+#workInfo form .worker .column span {
+  width: 1.5rem;
+  line-height: 0.85rem;
+  display: block;
+  float: left;
+  padding-left: 0.4rem;
+}
+#workInfo form .worker .column input {
+  display: block;
+  width: 4.4rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+    margin-top: .22rem;
+  float: left;
+  font-size: 0.26rem;
+  outline: none;
+  border: none;
+}
+#workInfo form .companyName_tips .tan_img {
+    float: left;
+    width: .25rem;
+    margin-left: .08rem;
+    margin-top: .13rem;
+}
+#workInfo form .companyName_tips .tan_img img {
+    width: .25rem;
+}
+#workInfo form .companyName_tips .tan_tips{
+    float: left;
+    width: 5.59rem;
+    height: .56rem;
+    line-height: .28rem ;
+    font-size: .22rem;
+    margin-top: .11rem;
+    margin-left: .08rem;
+    color: #faa54a;
+    letter-spacing: .009rem;
+}
+#workInfo form .companyPhone {
+    border-top: .5px solid #eaeaea;
+}
+#workInfo form .worker .column #edu {
+  background: url(../../img/wx/selectArrow.png) right center no-repeat;
+  background-size: 0.14rem;
+}
+#workInfo form .explain2 {
+  width: 100%;
+  height: 0.8rem;
+}
+#workInfo form .explain2 span {
+  display: block;
+  width: 1rem;
+  font-size: 0.22rem;
+  line-height: 0.66rem;
+  float: left;
+  padding-left: 0.2rem;
+  padding-top: 0.14rem;
+}
+#workInfo form .explain2 a {
+  font-size: 0.22rem;
+  line-height: 0.66rem;
+  float: right;
+  padding-right: 0.3rem;
+  color: #dc6a81;
+  padding-top: 0.14rem;
+}
+#workInfo form .account {
+  width: 100%;
+  height:auto;
+  background: white;
+}
+#workInfo form .account .column {
+  width: 100%;
+  height: 0.85rem;
+  font-size: 0.24rem;
+  border-bottom: 0.02rem solid #eaeaea;
+}
+#workInfo form .account .column span {
+  width: 1.6rem;
+  line-height: 0.85rem;
+  display: block;
+  float: left;
+  padding-left: 0.4rem;
+}
+#workInfo form .account .column span i {
+  color: #dc6a81;
+}
+#workInfo form .account .column input {
+  margin-top: .22rem;
+  width: 4.3rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  float: left;
+  font-size: 0.26rem;
+  outline: none;
+  border: none;
+}
+
+
+#workInfo form .business_card {
+  background: #eaeaea;
+}
+#workInfo form .business_cardPic {
+  width: 100%;
+  height: 1.5rem;
+  background: white;
+  position: relative;
+}
+#workInfo form .business_cardPic .add {
+  position: absolute;
+  top: .4rem;
+  left: .2rem;
+  width: .8rem;
+  height: .8rem;
+  background: #dcdcdc;
+  font-size: .24rem;
+  line-height: 0.8rem;
+  text-align: center;
+  color: #969696;
+}
+#workInfo form .account .column #bankName {
+  background: url(../../img/wx/selectArrow.png) right center no-repeat;
+  background-size: 0.14rem;
+}
+#repayment .area {
+  width: 100%;
+  height: auto;
+  padding-top: 0.32rem;
+  font-size: 0.24rem;
+  color: #5a5a5a;
+}
+#repayment .area p {
+  width: 5.9rem;
+  line-height: 0.32rem;
+  padding-left: 0.2rem;
+}
+#repayment .area h4 {
+  padding-left: 0.2rem;
+  line-height: 0.6rem;
+}
+#agreement .empty {
+  width: 100%;
+  height: 3.92rem;
+  background: white;
+}
+#agreement .phoneTest {
+  width: 100%;
+  height: auto;
+  background: white;
+  margin-top: 0.2rem;
+  font-size: 0.24rem;
+  padding-top: 0.48rem;
+}
+#agreement .phoneTest .phoneNum {
+  width: 100%;
+  height: 0.55rem;
+}
+#agreement .phoneTest .phoneNum span {
+  display: block;
+  line-height: 0.55rem;
+  float: left;
+}
+#agreement .phoneTest .phoneNum .name {
+  width: 1.30rem;
+  padding-left: 0.4rem;
+  text-align: right;
+}
+#agreement .phoneTest .phoneNum .number {
+  width: 2rem;
+  padding-left: 0.3rem;
+  color: #DC6A81;
+}
+#agreement .phoneTest .testCode {
+  width: 100%;
+  height: 0.7rem;
+  font-size: 0.24rem;
+}
+#agreement .phoneTest .testCode span {
+  display: block;
+  line-height: 0.55rem;
+  float: left;
+  width: 1.30rem;
+  padding-left: 0.4rem;
+  margin-top: 0.25rem;
+  text-align: right;
+}
+#agreement .phoneTest .testCode input {
+  border: none;
+  outline: none;
+  float: left;
+  font-size: 0.22rem;
+}
+#agreement .phoneTest .testCode #code {
+  width: 2.5rem;
+  height: 0.55rem;
+  line-height: 0.55rem;
+  margin-top: 0.25rem;
+  padding-left: 0.3rem;
+}
+#agreement .phoneTest .testCode #button {
+  width: 1.28rem;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  color: white;
+  border-radius: 0.06rem;
+  background: #83d9d0;
+}
+#agreement .phoneTest .underLine {
+  width: 6rem;
+  height: 0.1rem;
+  margin: 0 auto;
+  border: 0.01rem solid #b7b7b7;
+  border-top: none;
+}
+#agreement .phoneTest .check {
+  width: 100%;
+  height: 0.8rem;
+}
+#agreement .phoneTest .check #checkbox {
+  border: none;
+  outline: none;
+  width: 0.25rem;
+  height: 0.25rem;
+  line-height: 0.8rem;
+  margin-top: 0.27rem;
+  margin-left: 0.2rem;
+  border-radius: 0.02rem;
+}
+#agreement .phoneTest .check span {
+  font-size: 0.22rem;
+  line-height: 0.75rem;
+  padding-left: 0.1rem;
+}
+#agreement .phoneTest .check span i {
+  color: #DC6A81;
+}
+#confirm .logo {
+  width: 100%;
+  height: 4.4rem;
+}
+#confirm .logo .logoImg {
+    width: 100%;
+    height: 3.3rem;
+    position: relative;
+  /*width: 3.34rem;*/
+  /*padding: 0.88rem 1.64rem 0.78rem 1.44rem;*/
+}
+#confirm .logo .logoImg img{
+    width: 3.34rem;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+#confirm .logo .merchant {
+  width: 4.7rem;
+  height: 0.45rem;
+  margin: 0 auto;
+  position: relative;
+  z-index: 9;
+}
+#confirm .logo .merchant .house {
+  width: 0.37rem;
+  float: left;
+  padding-left: 0.18rem;
+}
+#confirm .logo .merchant input {
+  border: none;
+  outline: none;
+  width: 4rem;
+  line-height: 0.45rem;
+  float: right;
+  font-size: 0.28rem;
+  color: #84dad1;
+}
+#confirm .logo .merchant .underLine {
+  width: 100%;
+  height: 0.1rem;
+  border: 1px solid #84dad1;
+  border-top: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+#confirm .logo p {
+  width: 100%;
+  font-size: 0.22rem;
+  line-height: 0.64rem;
+  text-align: center;
+  color: #a4a4a4;
+}
+#apply .success {
+  width: 100%;
+  height: auto;
+}
+#apply .success img {
+  width: 0.7rem;
+  padding-top: 0.82rem;
+  padding-left: 2.84rem;
+}
+#apply .success .red {
+  font-size: 0.26rem;
+  color: #dc6a83;
+  line-height: 0.46rem;
+  text-align: center;
+  padding-top: 0.1rem;
+}
+#apply .success .time {
+  font-size: 0.22rem;
+  line-height: 0.4rem;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+#apply .empty {
+  width: 100%;
+  height: 0.18rem;
+  background: #eee;
+}
+#apply .qrCode {
+  width: 100%;
+  height: auto;
+}
+#apply .qrCode img {
+  width: 2.59rem;
+  padding-top: 0.85rem;
+  padding-left: 1.92rem;
+}
+#apply .qrCode p {
+  text-align: center;
+  font-size: 0.28rem;
+  line-height: 0.36rem;
+}
+#phonePass {
+ 	width: 100%;
+	height: 100%;
+ }
+ #phonePass .passWord {
+ 	width: 100%;
+ 	height: auto;
+ 	background: white;
+ }
+#phonePass .passWord .logoPhoneServe {
+	width: 100%;
+	height: 1.9rem;
+	text-align: center;
+	padding-top: .45rem;
+}
+#phonePass .passWord .logoPhoneServe img {
+	display: block;
+	width: 1.88rem;
+	margin: 0 auto;
+}
+#phonePass .passWord .list {
+	width: 100%;
+	height: auto;
+	padding-top: .67rem;
+}
+#phonePass .passWord .list li{
+	width: 6rem;
+	height: .5rem;
+	margin-left: .2rem;
+	border-bottom: 1px solid #b7b7b7;
+}
+#phonePass .passWord .list li div {
+	float: left;
+}
+#phonePass .passWord .list .phoneNum .left {
+	width: 1.8rem;
+	height: .5rem;
+	line-height: .5rem;
+	font-size: .26rem;
+	text-align: center;
+}
+#phonePass .passWord .list .phoneNum .right {
+	width: 4rem;
+	height: .5rem;
+	line-height: .5rem;
+	padding-left: .2rem;
+	font-size: .24rem;
+	color: #ccc;
+}
+#phonePass .passWord .list .phoneServeMima {
+	padding-top: .48rem;
+    position: relative;
+}
+#phonePass .passWord .list .phoneServeMima .left {
+	width: 1.8rem;
+	height: .5rem;
+	line-height: .5rem;
+	font-size: .26rem;
+	text-align: center;
+	float: left;
+}
+#phonePass .passWord .list .phoneServeMima input {
+	float: left;
+	-webkit-appearance: none;
+	appearance: none;
+	outline:none;
+	border: none;
+	width: 4rem;
+	height: .5rem;
+	line-height: .5rem;
+	padding-left: .2rem;
+	font-size: .24rem;
+}
+#phonePass .passWord .list .phoneServeMima .changeType {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: .5rem;
+    height: .5rem;
+    background: url(../../img/wxSecond/openPass.png) center center no-repeat;
+    background-size: .36rem .24rem ;
+}
+
+#phoneSub {
+	-webkit-appearance: none;
+	appearance: none;
+	outline: none;
+	border: none;
+	display: block;
+	width: 6rem;
+	height: .9rem;
+	margin:  0 auto;
+	border-radius: .1rem;
+	background: rgb(235,33,107);
+	color: white;
+	font-size: .3rem;
+	margin-top: .5rem;
+}
+#phonePass .passWord .alterExp {
+	width: 100%;
+	height: .7rem;
+	line-height: .7rem;
+}
+#phonePass .passWord .alterExp a {
+	font-size: .22rem;
+	display: block;
+	float: right;
+	line-height: .7rem;
+	padding-right: .2rem;
+	letter-spacing: .02rem;
+	color: #9c9c9c;
+	text-decoration: underline;
+}
+#phonePass .passWord .alterExp a:hover {
+	color: #EA206A;
+}
+#phonePass h3 {
+	padding-top: .3rem;
+	padding-left: .2rem;
+	width: 6rem;
+	line-height: .66rem;
+	font-size: .26rem;
+}
+#phonePass .serveExp {
+	width: 6rem;
+	padding-left: .2rem;
+	line-height: .34rem;
+	font-size: .22rem;
+	color: #959595;
+	letter-spacing: .025rem;
+}
+/*弹窗1*/
+#phonePass .alterExpWindow {
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.8);
+}
+#phonePass .alterExpWindow .servewindow {
+	width: 6rem;
+	height: 7.6rem;
+	background: white;
+	border-radius: .1rem;
+	margin: 0 auto;
+	margin-top: .85rem;
+	position: relative;
+}
+#phonePass .alterExpWindow .servewindow ul {
+	width: 100%;
+	height: 100%;
+	padding-top: .1rem;
+}
+#phonePass .alterExpWindow .servewindow ul li{
+	width: 100%;
+	height: auto;
+	padding-top: .26rem;
+	padding-bottom: .24rem;
+	border-bottom: 1px solid  #ccc;
+}
+#phonePass .alterExpWindow .servewindow ul li:last-child{
+	border-bottom: none;
+}
+#phonePass .alterExpWindow .servewindow ul li p{
+	width:5.5rem;
+	padding-left: .25rem;
+	line-height: .42rem;
+	font-size: .22rem;
+	color: #555555;
+}
+#phonePass .alterExpWindow .servewindow ul li p .other {
+	color: #eb216b;
+}
+#phonePass .alterExpWindow .servewindow ul li p i {
+	font-style: normal;
+	font-family: "微软雅黑";
+	color: #000;
+}
+#phonePass .alterExpWindow .servewindow .cancelHide {
+	width: .42rem;
+	height: .4rem;
+	line-height: .4rem;
+	color: white;
+	font-size: .24rem;
+	text-align: center;
+	position: absolute;
+	left: 2.8rem;
+	bottom: -0.68rem;
+}
+#phonePass .alterExpWindow .servewindow .cancelHide img {
+	width: 98%;
+}
+
+#validate .presonInfo {
+  width: 100%;
+  height: .9rem;
+}
+#validate .presonInfo p{
+  line-height: .8rem;
+  padding-top: 0.1rem;
+  font-size: .22rem;
+  color: #ea216a;
+}
+#validate .validateIn {
+  width: 100%;
+  height: auto;
+}
+#validate .validateIn .column {
+  padding-top: 0.1rem
+  width: 100%;
+  height: 0.8rem;
+  font-size: 0.24rem;
+  background: white;
+  border-bottom: 1px solid #eaeaea;
+}
+#validate .validateIn .column span {
+  display: block;
+  float: left;
+  width: 1.7rem;
+  line-height: 0.8rem;
+  padding-left: 0.2rem 
+}
+#validate .validateIn .column span .star {
+  color: #ea216a;
+}
+#validate .validateIn .column input {
+  width: 4.1rem;
+  padding-left: 0.3rem;
+  height: 0.8rem;
+  padding-left: 0.2rem;
+}
+#validate .validateIn .valCode input {
+  display: block;
+  float: left;
+  font-size: 0.24rem;
+}
+#validate .validateIn .valCode input:nth-of-type(1) {
+  width: 2.7rem;
+  height: .4rem;
+    margin-top: .2rem;
+  padding-left: 0.2rem;
+  line-height: 0.4rem;
+}
+#validate .validateIn .valCode input:nth-of-type(2) {
+  width: 1.4rem;
+  height: 0.6rem;
+  margin-top: 0.1rem;
+  border-radius: 0.04rem;
+  padding-left: 0;
+}
+#validate .validateIn .profession .areaPro{
+    width: 4.15rem;
+    height: 0.6rem;
+    float: left;
+    margin-top: 0.2rem;
+    position: relative;
+}
+#validate .validateIn .profession .areaPro .selectPro{
+    -webkit-appearance: none;
+    margin-left: 0.2rem;
+    width: 4.04rem;
+    height: 0.4rem;
+    font-size: 0.24rem;
+    background: none;
+    color: #979797;
+    border: none;
+    outline: none;
+    float: left;
+    background: url(../../img/wx/selectDown.png) right center no-repeat;
+    background-size: 0.26rem;
+}
+#validate .validateIn .empty{
+  width: 100%;
+  height: .2rem;
+}
+#validate .validateIn .otherPro{
+    height: 0.6rem;
+    display: none;
+}
+#validate .validateIn .referrer span {
+  padding-left: 0.3rem;
+}
+#validate .validateIn .referrer .underLine {
+  bottom: 0.4rem;
+}
+
+#schoolInfro .explain {
+  width: 6rem;
+  line-height: 0.85rem;
+  font-size: 0.22rem;
+  padding-left: 0.2rem;
+}
+#schoolInfro form {
+  width: 100%;
+  height: auto;
+}
+#schoolInfro form ul {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+#schoolInfro form ul li {
+  width: 100%;
+  height: 0.9rem;
+  background: white;
+  border-bottom: 1px solid #e9e9e9;
+}
+#schoolInfro form ul .clear{
+    width: 0;
+    height: 0;
+    clear: both;
+}
+#schoolInfro form ul li span {
+  display: block;
+  width: 1.85rem;
+  line-height: 0.9rem;
+  float: left;
+  padding-left: 0.2rem;
+  font-size: 0.26rem;
+}
+#schoolInfro form ul li span i {
+  color: #DC6A81;
+}
+#schoolInfro form ul li input {
+  padding-left: 0.3rem;
+  width: 3.85rem;
+  line-height: 0.9rem;
+  font-size: 0.26rem;
+  float: left;
+}
+#schoolInfro form ul .edu {
+  position: relative;
+}
+#schoolInfro form ul .edu input {
+  background: url(../../img/wx/selectArrow.png) right center no-repeat;
+  background-size: 0.14rem;
+}
+#schoolInfro form ul .schoolAde input {
+  background: url(../../img/wx/selectArrow.png) right center no-repeat;
+  background-size: 0.14rem;
+}
+#schoolInfro form ul .famliyName {
+  margin-top: 0.18rem;
+}
+#schoolInfro form ul .bank {
+  margin-top: 0.18rem;
+    position: relative;
+}
+#schoolInfro form ul .bank .banknAccount {
+    display: none;
+    width: 2.7rem;
+    height: auto;
+    position: absolute;
+    right: 0.01rem;
+    top: 0.85rem;
+    border: 1px solid #B7B7B7;
+    border-radius: 0.1rem;
+    background: white;
+}
+#photoInfro .explain {
+  width: 100%;
+  height: 0.18rem;
+}
+#photoInfro .photos {
+  width: 100%;
+  height: 9rem;
+}
+#photoInfro .photos ul {
+  width: 100%;
+  height: auto;
+  background: white;
+}
+#photoInfro .photos ul li{
+  width: 3.15rem;
+  height: 2.9rem;
+  margin-bottom: 0.1rem;
+  background: white; 
+  float: left;
+}
+#photoInfro .photos ul li:nth-child(even) {
+  margin-left: 0.1rem;
+}
+/*#photoInfro .photos ul li:nth-child(odd) {
+  
+}*/
+#photoInfro .photos .filepic_btn {
+  margin-top: .5rem;
+}
+#photoInfro .photos ul li dl {
+  width: 1.7rem;
+  height: auto;
+  margin: 0 auto;
+}
+#photoInfro .photos ul li dl dt {
+  margin-top: 0.3rem;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  //background: url(../../img/wxSecond/filepic.png) center center no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+#photoInfro .photos ul li dl dt img {
+  display: block;
+  width: 100%;
+  height:100%;
+  outline: none;
+}
+#photoInfro .photos ul li dl dd {
+  width: 100%;
+  text-align: center;
+  line-height: .9rem;
+  font-size: .24rem; 
+}
+/*#photoInfro .photos ul li {
+  width: 6rem;
+  height: 1.6rem;
+  margin: 0 auto;
+  padding-top: 0.25rem;
+  padding-bottom: 0.24rem;
+  border-bottom: 1px solid #E9E9E9;
+}
+#photoInfro .photos ul li .photo {
+  width: 1.6rem;
+  height: 1.6rem;
+  float: left;
+  margin-left: 0.45rem;
+  background: url(../../img/wx/photo.png) center center no-repeat;
+  background-size: 100% 100%;
+    position: relative;
+}
+#photoInfro .photos ul li .photo img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#photoInfro .photos ul li .btnRight {
+  width: 2.4rem;
+  height: 1.6rem;
+  float: left;
+  padding-left: 1rem;
+}
+#photoInfro .photos ul li .btnRight input {
+  display: block;
+  width: 2rem;
+  margin: 0 auto;
+  line-height: 0.63rem;
+  background: #dc6a81;
+  border-radius: 0.31rem;
+  color: white;
+  font-size: 0.28rem;
+  margin-top: 0.36rem;
+}
+#photoInfro .photos ul li .btnRight span {
+  width: 100%;
+  text-align: center;
+  line-height: 0.62rem;
+  font-size: 0.22rem;
+  display: block;
+  color: #8a8a8a;
+}
+#photoInfro .photos ul P {
+  width: 100%;
+  line-height: 0.66rem;
+  font-size: 0.22rem;
+  color: #DC6A81;
+  text-align: center;
+}
+*/
+#listArea{
+    background-color: rgba(0, 0, 0, 0.2);
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9900;
+    overflow: hidden;
+}
+
+#listArea .list {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border: 1px solid #B7B7B7;
+    background: rgb(255,255,255);
+}
+#listArea .list li {
+    width: 100%;
+    text-align: center;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    color: #5A5A5A;
+    font-size: 0.24rem;
+    border-bottom: 1px solid #B7B7B7;
+}
+#ebuycity-level-one{
+    -webkit-appearance: none;
+    width: 1.5rem;
+    height: 0.4rem;
+    margin-top: 0.25rem;
+    padding-left: .2rem;
+    font-size: 0.26rem;
+    float: left;
+}
+#ebuycity-level-two{
+    -webkit-appearance: none;
+    float: left;
+    width: 1.5rem;
+    height: 0.4rem;
+    margin-left: 0.2rem;
+    margin-top: 0.25rem;
+    padding-left: .2rem;
+    font-size: 0.26rem;
+}
+
+#workCity-level-one{
+    -webkit-appearance: none;
+    width: 1.5rem;
+    height: 0.4rem;
+    margin-top: 0.25rem;
+    padding-left: .2rem;
+    font-size: 0.26rem;
+    float: left;
+}
+#workCity-level-two{
+    -webkit-appearance: none;
+    float: left;
+    width: 1.5rem;
+    height: 0.4rem;
+    margin-left: 0.2rem;
+    margin-top: 0.25rem;
+    padding-left: .2rem;
+    font-size: 0.26rem;
+}
+
+#familyCity-level-one{
+    -webkit-appearance: none;
+    width: 1.5rem;
+    height: 0.4rem;
+    margin-top: 0.25rem;
+    padding-left: .2rem;
+    font-size: 0.26rem;
+    float: left;
+}
+#familyCity-level-two{
+    -webkit-appearance: none;
+    float: left;
+    width: 1.5rem;
+    height: 0.4rem;
+    margin-left: 0.2rem;
+    margin-top: 0.25rem;
+    padding-left: .2rem;
+    font-size: 0.26rem;
+}
+.area{
+    width: 3.88rem;
+    height: 0.9rem;
+    float: left;
+    position: relative;
+}
+.area .select{
+    -webkit-appearance: none;
+    appearance:none;
+    position: absolute;
+    left: 0;
+    top: 0.25rem;
+    width: 3.88rem;
+    height: 0.4rem;
+    font-size: 0.26rem;
+    background: none;
+    color:#bcbcbc ;
+    border: none;
+    outline: none;
+    background: url(../../img/wx/selectArrow.png) right center no-repeat;
+    background-size: 0.14rem;
+}
+
+#qzdcity-level-one{
+    /*-webkit-appearance: none;*/
+    width: 1.7rem;
+    height: 0.4rem;
+    margin-top: 0.25rem;
+    margin-left: 0.2rem;
+    font-size: 0.26rem;
+    float: left;
+}
+#qzdcity-level-two{
+    /*-webkit-appearance: none;*/
+    float: left;
+    width: 1.7rem;
+    height: 0.4rem;
+    margin-left: 0.2rem;
+    margin-top: 0.25rem;
+    font-size: 0.26rem;
+}
+
+/*弹框样式new*/
+.layui-layer-shade {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.oAlterWindow {
+    width: 5.2rem;
+    height: auto;
+    position: absolute;
+    top: 1.2rem;
+    left: .6rem;
+    background: rgb(255,255,255);
+}
+.oAlterWindow .layui-layer-title {
+    width: 5.2rem;
+    padding: 0;
+    height: .8rem;
+    line-height: .8rem;
+    color: #ea216a;
+    font-size: .3rem;
+    text-align: center;
+    letter-spacing: .03rem;
+    border-bottom: 1px solid #969696;
+}
+.oAlterWindow .layui-layer-content {
+    width: 5.2rem;
+    height: auto;
+    padding: 0;
+}
+.oAlterWindow .layui-layer-content p {
+    width: 80%;
+    padding-left: 10%;
+    line-height: .4rem;
+    text-align: center;
+    font-size: .3rem;
+}
+.oAlterWindow .layui-layer-content .tips_1 {
+    padding-top: .58rem;
+    color:#f7d25c;
+}
+.oAlterWindow .layui-layer-content .tips_2 {
+    color: #969696;
+    padding-bottom: .54rem;
+}
+.layui-layer-btn {
+    padding-bottom: .5rem;
+}
+.layui-layer-btn a {
+    display: block;
+    font-size: .24rem;
+    position: relative;
+}
+.layui-layer-btn .layui-layer-btn0 {
+    width: 2.8rem;
+    height: .7rem;
+    margin: 0 auto;
+    line-height: .7rem;
+    background: #ea216a;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: .08rem;
+    padding: 0;
+    letter-spacing: .03rem;
+}
+.layui-layer-btn .layui-layer-btn1 {
+    display: none;
+    width: .5rem;
+    height: .5rem;
+    border: none;
+    position: absolute;
+    left: 2.2rem;
+    bottom: -.68rem;
+    background: url(../../img/wx/filepic_dia_del.png) center center no-repeat;
+    background-size: 100% 100%;
+
+}
+/*弹框样式end*/
+
+/*微信提示弹框*/
+.loadWindow {
+    width: 1.9rem;
+    height:auto;
+    text-align: center;
+    position: absolute;
+    background: #fff;
+    border-radius: .08rem;
+}
+.loadWindow .layui-layer-content {
+    width: 1.9rem;
+    height:auto;
+    background: #fff;
+    padding: 0;
+    border-radius: .08rem;
+}
+
+.loadWindow .layui-layer-content p {
+    width: 100%;
+    line-height: .53rem;
+    text-align: center;
+    font-size: .24rem;
+}
+.loadWindow .layui-layer-content .tips_1 {
+    padding-top: .34rem;
+}
+.loadWindow .layui-layer-content .tips_1 img{
+    display: inline-block;
+    width: .53rem;
+    height: .53rem;
+    animation: move 1.2s linear infinite;
+    -webkit-animation: move 1.2s linear infinite;
+    -moz-animation: move 1.2s linear infinite;
+    -ms-animation: move 1.2s linear infinite;
+    -o-animation: move 1.2s linear infinite;
+}
+@keyframes move{
+    from{ transform: rotateZ(0deg);}
+    to{transform: rotateZ(360deg);}
+}
+@-moz-keyframes move{
+    from{ transform: rotateZ(0deg);}
+    to{transform: rotateZ(360deg);}
+}
+@-ms-keyframes move{
+    from{ transform: rotateZ(0deg);}
+    to{transform: rotateZ(360deg);}
+}
+@-webkit-keyframes move{
+    from{ transform: rotateZ(0deg);}
+    to{transform: rotateZ(360deg);}
+}
+
+.loadWindow .layui-layer-content .tips_2 {
+    padding-top: .18rem;
+    padding-bottom: .18rem;
+    color: #000;
+}
+/*微信提示弹框end*/
+
+/*服务密码页面短信提示弹框*/
+.checkLists {
+    width: 4.6rem;
+    height: auto;
+    position: absolute;
+    background: rgb(255,255,255);
+}
+.checkLists .layui-layer-content {
+    width: 4.6rem;
+    height: auto;
+    background: rgb(255,255,255);
+    padding: 0;
+    border-radius: .05rem;
+}
+.checkLists .layui-layer-content .sendCode {
+    width: 4.2rem;
+    line-height: .34rem;
+    letter-spacing: .01rem;
+    font-size: .24rem;
+    padding-top: .42rem;
+    padding-left: .2rem;
+    padding-bottom: .3rem;
+    color: #959595;
+    border-radius: .05rem;
+}
+.checkLists .layui-layer-content .sendCode i{
+    font-style: normal;
+    color: #f3c400;
+}
+.checkLists .layui-layer-content  .codeFrom {
+    width: 4.6rem;
+    /*height: 2.35rem;*/
+    padding-bottom: .55rem;
+    background: rgb(255,255,255);
+}
+.checkLists .layui-layer-content .codeFrom .code {
+    width: 4.2rem;
+    height: .5rem;
+    border-bottom: 1px solid #b7b7b7;
+    margin: 0 auto;
+    padding-top: .26rem;
+    font-size: .24rem;
+}
+.checkLists .layui-layer-content .codeFrom .code .codeAble{
+    display: block;
+    width: auto;
+    line-height: .5rem;
+    float: left;
+}
+.checkLists .layui-layer-content .codeFrom .code .verCode {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    background: none;
+    border: none;
+    width: 2.7rem;
+    height: .5rem;
+    float: left;
+    font-size: .24rem;
+}
+.checkLists .layui-layer-content .layui-layer-btn .layui-layer-btn0 {
+    width: 4.2rem;
+    height: .7rem;
+    margin: 0 auto;
+    line-height: .7rem;
+    background: #ea216a;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: .08rem;
+    padding: 0;
+    letter-spacing: .03rem;
+}
+
+/*服务密码页面短信提示弹框end*/
+
+/*申请成功提示弹框*/
+.applySuccessAlterWindow {
+    width: 4.6rem;
+    height: auto;
+    background: rgb(255,255,255);
+    position: absolute;
+}
+
+.applySuccessAlterWindow .layui-layer-content {
+    width: 4.6rem;
+    height: auto;
+}
+.applySuccessAlterWindow .layui-layer-content p {
+    padding-left: 0;
+}
+.applySuccessAlterWindow .layui-layer-content .txt1{
+    width: 100%;
+    height: .7rem;
+    /*text-align: center;*/
+    padding-top: .45rem;
+    /*position: relative;*/
+}
+.applySuccessAlterWindow .layui-layer-content .txt1 img {
+    display: block;
+    width: .7rem;
+    height: .7rem;
+    margin: 0 auto;
+}
+.applySuccessAlterWindow .layui-layer-content .txt2 {
+    width: 100%;
+    height: .45rem;
+    line-height: .45rem;
+    padding-top: .25rem;
+    color: #eb216b;
+    text-align: center;
+    font-size: .26rem;
+}
+.applySuccessAlterWindow .layui-layer-content .txt3 {
+    width: 100%;
+    height: .44rem;
+    line-height: .44rem;
+    color: #545454;
+    text-align: center;
+    font-size: .22rem;
+}
+.applySuccessAlterWindow .layui-layer-btn {
+    width: 100%;
+    height: .7rem;
+    padding-bottom: .4rem;
+    padding-top: .35rem;
+}
+.applySuccessAlterWindow .layui-layer-btn .layui-layer-btn0 {
+    display: block;
+    width: 3.6rem;
+    height: .7rem;
+    margin: 0 auto;
+    line-height: .7rem;
+    background: #ea216a;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: .08rem;
+    padding: 0;
+    letter-spacing: .03rem;
+    margin: 0 auto;
+    font-size: .3rem;
+}
+/*申请成功提示弹框end*/
+
+/*家庭信息*/
+#family {
+    width: 100%;
+    height: auto;
+}
+#family form .familyInfo {
+    width: 100%;
+}
+#family form .familyInfo .column {
+    width: 100%;
+    height: 0.9rem;
+    font-size: 0.24rem;
+    border-bottom: 1px solid #eaeaea;
+    background: #fff;
+}
+.contact {
+    margin-bottom: .15rem;
+}
+#family form .familyInfo .column span {
+    width: 1.94rem;
+    line-height: 0.9rem;
+    display: block;
+    float: left;
+    padding-left: 0.4rem;
+}
+#family form .familyInfo .column input {
+    display: block;
+    margin-top: .25rem;
+    width: 3.88rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+
+    float: left;
+    font-size: 0.26rem;
+    outline: none;
+    border: none;
+
+}
+/*家庭信息end*/
+
+/*联系人*/
+#family_people {
+    width: 100%;
+}
+#family_people .failure {
+    width: 100%;
+    padding-top: .46rem;
+    height: auto;
+    background: #fff;
+    text-align: center;
+}
+#family_people .failure .failure_img {
+    width: 100%;
+    height: 1.68rem;
+}
+#family_people .failure .failure_img img {
+    display: block;
+    width: 1.57rem;
+    height: 1.68rem;
+    margin: 0 auto;
+}
+#family_people .failure .failure_title {
+    padding-top: .2rem;
+    width: 100%;
+    height: .44rem;
+    line-height: .44rem;
+    font-size: .26rem;
+    color: #e72468;
+}
+#family_people .failure .failure_con {
+    padding-bottom: .28rem;
+    width: 100%;
+    height: .44rem;
+    line-height: .44rem;
+    font-size: .22rem;
+    color: #959595;
+}
+#family_people form {
+    width: 100%;
+}
+#family_people form .column {
+    width: 100%;
+    height: 0.9rem;
+    font-size: 0.24rem;
+    border-bottom: 1px solid #eaeaea;
+    background: #fff;
+}
+#family_people form .column span {
+    width: 1.94rem;
+    line-height: 0.9rem;
+    display: block;
+    float: left;
+    padding-left: 0.4rem;
+}
+#family_people form .column input {
+    display: block;
+    margin-top: .25rem;
+    width: 3.88rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+
+    float: left;
+    font-size: 0.26rem;
+    outline: none;
+    border: none;
+
+}
+/*联系人end*/
+.iconfamily {
+    background: url(../../img/wxSecond/need_icon_family.png) center right no-repeat;
+    background-size:.3rem .25rem;
+}
+.iconfamily_people {
+    background: url(../../img/wxSecond/need_icon_people_1.png) center right no-repeat;
+    background-size:.3rem .25rem;
+}
+.iconfamily_people_2 {
+    background: url(../../img/wxSecond/need_icon_people.png) center right no-repeat;
+    background-size:.3rem .25rem;
+}
+
+
+#family form .familyInfo .column #qq_email {
+    width: 2.38rem;
+}
+#family form .familyInfo .column span.qq_last {
+    padding-left: 0.1rem;
+    width: 1.5rem;
+    background: rgba(250, 165, 74, 0.1);
+}

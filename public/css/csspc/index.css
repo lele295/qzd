@@ -1,0 +1,14 @@
+#banner {
+  width: 100%;
+  height: 601px;
+  background: url(../../img/pcImg/qzdbj.jpg) center center no-repeat;
+}
+#footer {
+  width: 100%;
+  height: 74px;
+  text-align: center;
+  line-height: 74px;
+  font-size: 12px;
+  color: #7a7a7a;
+}
+/*# sourceMappingURL=index.css.map */

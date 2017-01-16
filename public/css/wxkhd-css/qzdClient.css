@@ -1,0 +1,772 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  font-size: 100px;
+  font-family: "微软雅黑";
+  background: #eaeaea;
+}
+ul,
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+i {
+  font-style: normal;
+}
+input {
+  border: none;
+  outline: none;
+  font-size: 0.24rem;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('../../iconfontbag/iconfont.eot');/* IE9*/
+  src: url('../../iconfontbag/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../../iconfontbag/iconfont.woff') format('woff'), /* chrome、firefox */
+  url('../../iconfontbag/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('../../iconfontbag/iconfont.svg#iconfont') format('svg');/* iOS 4.1- */
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.nextBtn {
+  display: block;
+  width: 6rem;
+  height: 0.9rem;
+  margin: 0 auto;
+  background: #dc6a81;
+  border-radius: 0.44rem;
+  text-align: center;
+  color: white;
+  font-size: 0.34rem;
+  line-height: 0.9rem;
+  margin-top: 0.4rem;
+}
+.header {
+  width: 100%;
+  height: 0.9rem;
+  background: #201f24;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+}
+.header #backBtn {
+  display: block;
+  width: 1rem;
+  height: 0.24rem;
+  font-size: 0.24rem;
+  line-height: 0.24rem;
+  padding-left: 0.18rem;
+  padding-top: 0.3rem;
+  color: white;
+  float: left;
+}
+.header h1 {
+  width: 4.0rem;
+  height: 0.9rem;
+  line-height: 0.9rem;
+  color: white;
+  font-size: 0.34rem;
+  text-align: center;
+  float: left;
+}
+.header .rightSpan {
+  display: block;
+  width: 0.43rem;
+  line-height: 0.9rem;
+  padding-right: 0.15rem;
+  font-size: 0.4rem;
+  color: white;
+  float: right;
+}
+.content {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0.9rem;
+  left: 0;
+}
+.content .secondHeader {
+  width: 100%;
+  height: 0.8rem;
+  background: #db6a7e;
+}
+.content .secondHeader .backRound {
+  display: block;
+  width: 0.58rem;
+  line-height: 0.8rem;
+  text-align: right;
+  font-size: 0.4rem;
+  color: white;
+  float: left;
+}
+.content .secondHeader h2 {
+  float: left;
+  color: white;
+  font-size: 0.34rem;
+  width: 100%;
+  line-height: 0.8rem;
+  text-align: center;
+}
+#login {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+#login .logo {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-top: 0.64rem;
+  background: white;
+}
+#login .logo img {
+  width: 3.34rem;
+}
+#login form {
+  width: 100%;
+  height: auto;
+  padding-bottom: 0.45rem;
+  background: white;
+}
+#login form .column {
+  width: 6rem;
+  height: 0.44rem;
+  font-size: 0.26rem;
+  margin: 0 auto;
+}
+#login form .column span {
+  display: block;
+  width: 1.5rem;
+  line-height: 0.44rem;
+  text-align: right;
+  float: left;
+}
+#login form .empty {
+  width: 6rem;
+  height: 0.1rem;
+  margin: 0 auto;
+  border: 1px solid #b7b7b7;
+  border-top: none;
+}
+#login form .merNum {
+  padding-top: 0.54rem;
+}
+#login form .merNum .select {
+  width: 3.8rem;
+  height: 0.44rem;
+  float: left;
+  line-height: 0.44rem;
+  color: #c8c8c8;
+  padding-left: 0.15rem;
+  position: relative;
+}
+#login form .merNum .select input {
+  width: 100%;
+  line-height: 0.44rem;
+  font-family: "微软雅黑";
+  color: #c8c8c8;
+}
+#login form .merNum .select ul {
+  display: none;
+  position: absolute;
+  right: -0.2rem;
+  top: 0.54rem;
+  width: 4.2rem;
+  height: auto;
+  border: 1px solid #B7B7B7;
+}
+#login form .merNum .select ul li {
+  width: 100%;
+  line-height: 0.4rem;
+  padding-left: 0.2rem;
+  border-bottom: 1px solid #B7B7B7;
+  z-index: 99;
+  background: #ccc;
+  color: white;
+}
+#login form .merNum .arrow {
+  display: block;
+  width: 0.4rem;
+  float: left;
+  font-size: 0.3rem;
+  line-height: 0.5rem;
+  font-weight: bolder;
+  color: #999;
+}
+#login form .legalNum {
+  padding-top: 0.3rem;
+}
+#login form .legalNum input {
+  width: 4.35rem;
+  line-height: 0.44rem;
+  padding-left: 0.15rem;
+  font-family: "微软雅黑";
+  color: #c8c8c8;
+}
+#login .explain {
+  width: 100%;
+  text-align: center;
+  font-size: 0.22rem;
+  line-height: 0.54rem;
+  color: #787878;
+}
+.loginSuccess {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+.loginSuccess .succWindow {
+  width: 5.2rem;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 2.8rem;
+}
+.loginSuccess .succWindow h4 {
+  width: 100%;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.28rem;
+  background: #DC6A81;
+  text-align: center;
+}
+.loginSuccess .succWindow p {
+  background: white;
+}
+.loginSuccess .succWindow .icon {
+  width: 100%;
+  padding-top: 0.18rem;
+  text-align: center;
+  font-size: 0.85rem;
+  line-height: 1.6rem;
+  color: #85d8ce;
+}
+.loginSuccess .succWindow .txt {
+  width: 100%;
+  text-align: center;
+  line-height: 0.36rem;
+  font-size: 0.22rem;
+  color: #787878;
+  padding-bottom: 0.9rem;
+}
+.loginSuccess .succWindow .del {
+  background: none;
+  width: 100%;
+  text-align: center;
+  line-height: 0.8rem;
+  font-size: 0.4rem;
+  color: white;
+  font-weight: lighter;
+}
+#infromation .headPhoto {
+  width: 100%;
+  height: 2.8rem;
+  padding-top: 0.4rem;
+  background: #DC6A81;
+}
+#infromation .headPhoto .head {
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  border: 0.18rem solid #e498a4;
+  background: white;
+  margin: 0 auto;
+  font-size: 0.6rem;
+  line-height: 1.4rem;
+  text-align: center;
+  color: #e3e3e3;
+}
+#infromation .headPhoto .ueserName {
+  width: 100%;
+  text-align: center;
+  line-height: 0.56rem;
+  font-size: 0.26rem;
+  color: white;
+}
+#infromation .headPhoto .complete {
+  width: 2.3rem;
+  height: 0.4rem;
+  margin: 0 auto;
+  background: #e69aa7;
+  font-size: 0.24rem;
+  line-height: 0.4rem;
+  text-align: center;
+  border-radius: 0.2rem;
+}
+#infromation .headPhoto .complete i {
+  font-size: 0.26rem;
+  color: #70ae25;
+}
+#infromation .details {
+  width: 100%;
+  height: auto;
+  margin-top: 0.1rem;
+}
+#infromation .details ul {
+  width: 100%;
+  height: auto;
+}
+#infromation .details ul li {
+  width: 100%;
+  height: 0.9rem;
+  font-size: 0.3rem;
+  border-bottom: 1px solid #B7B7B7;
+  background: white;
+}
+#infromation .details ul li img {
+  display: block;
+  width: 0.5rem;
+  float: left;
+  padding-left: 0.2rem;
+  padding-top: 0.2rem;
+}
+#infromation .details ul li .title {
+  padding-left: 0.2rem;
+  width: 1.8rem;
+  line-height: 0.9rem;
+  float: left;
+  display: block;
+}
+#infromation .details ul li .rightArrow {
+  display: block;
+  width: 1rem;
+  float: right;
+  line-height: 0.9rem;
+  font-size: 0.3rem;
+  padding-left: 0.2rem;
+  text-align: right;
+}
+#infromation .details ul li:nth-of-type(2) {
+  margin-top: 0.1rem;
+}
+#infromation .details ul li:nth-of-type(5) {
+  margin-top: 0.1rem;
+}
+#infromation .outLogin {
+  background: #b3b3b3;
+}
+#listBox {
+  width: 100%;
+  height: auto;
+}
+#listBox .secondHeader h2 {
+  width: 5.24rem;
+}
+#listBox .emptyBox {
+  width: 100%;
+  height: auto;
+  background: white;
+  position: absolute;
+  left: 0;
+  top: 0.8rem;
+  z-index: 3;
+}
+#listBox .emptyBox img {
+  display: inline-block;
+  width: 0.9rem;
+  padding-top: 1.2rem;
+  padding-left: 2.75rem;
+}
+#listBox .emptyBox p {
+  width: 100%;
+  text-align: center;
+  font-size: 0.24rem;
+  line-height: 0.8rem;
+  color: #999;
+}
+#listBox .box {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 0.8rem;
+  z-index: 99;
+}
+#listBox .box .list {
+  width: 100%;
+  height: auto;
+  background: white;
+  margin-bottom: 0.18rem;
+}
+#listBox .box .list .type {
+  width: 100%;
+  height: 0.48rem;
+  padding-top: 0.19rem;
+  padding-bottom: 0.19rem;
+  border-bottom: 1px solid #B7B7B7;
+}
+#listBox .box .list .type .hospitalName {
+  width: 4.8rem;
+  height: 0.48rem;
+  line-height: 0.48rem;
+  font-size: 0.26rem;
+  float: left;
+  padding-left: 0.2rem;
+}
+#listBox .box .list .type .audit {
+  width: 1.2rem;
+  line-height: 0.48rem;
+  text-align: center;
+  float: left;
+  color: white;
+  font-size: 0.22rem;
+  background: #b5b5b5;
+  border-radius: 0.2rem;
+}
+#listBox .box .list .infro {
+  width: 100%;
+  height: 1.24rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+#listBox .box .list .infro .left {
+  width: 1.24rem;
+  height: 1.24rem;
+  float: left;
+  padding-left: 0.2rem;
+}
+#listBox .box .list .infro .left img {
+  display: block;
+  width: 1.24rem;
+}
+#listBox .box .list .infro .right {
+  width: 3.5rem;
+  height: 1.24rem;
+  float: left;
+  padding-left: 0.2rem;
+}
+#listBox .box .list .infro .right p {
+  width: 100%;
+  line-height: 0.4rem;
+  font-size: 0.22rem;
+  color: #979797;
+}
+#listBox .box .list .infro .right p:nth-of-type(1) {
+  font-size: 0.24rem;
+  color: #1e1e1e;
+}
+#listBox .box .list .infro .right p:nth-of-type(2) span {
+  color: #DC6A81;
+}
+#listBox .box .list .infro .right p:nth-of-type(3) span {
+  color: #85D8CE;
+}
+#infromations {
+  background: white;
+}
+#infromations .secondHeader h2 {
+  width: 5.24rem;
+}
+#infromations .column {
+  width: 100%;
+  height: 0.9rem;
+  border-bottom: 1px solid #B7B7B7;
+}
+#infromations .column img {
+  display: inline-block;
+  float: left;
+  width: 0.5rem;
+  padding-left: 0.2rem;
+  padding-top: 0.2rem;
+}
+#infromations .column .name {
+  display: block;
+  width: 2.10rem;
+  float: left;
+  font-size: 0.3rem;
+  line-height: 0.9rem;
+  padding-left: 0.2rem;
+}
+#infromations .column .right {
+  display: block;
+  float: right;
+  width: 2rem;
+  text-align: right;
+  font-size: 0.3rem;
+  padding-right: 0.2rem;
+  line-height: 0.9rem;
+}
+#infromations ul {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+#infromations ul li {
+  width: 100%;
+  height: 0.7rem;
+  margin: 0 auto;
+  border-bottom: 1px solid #B7B7B7;
+}
+#infromations ul li span {
+  display: block;
+  font-size: 0.24rem;
+  color: #969696;
+}
+#infromations ul li .leftIn {
+  float: left;
+  line-height: 0.7rem;
+  width: 1.5rem;
+  padding-left: 0.9rem;
+}
+#infromations ul li .rightIn {
+  width: 3.8rem;
+  line-height: 0.7rem;
+  float: right;
+  text-align: right;
+  padding-right: 0.2rem;
+}
+#infromations ul .empty {
+  width: 100%;
+  height: 0.1rem;
+  background: #eaeaea;
+}
+#infromations .photo {
+  width: 100%;
+  display: none;
+}
+#infromations .photo .photoEare {
+  width: 1.6rem;
+  height: 2.4rem;
+  float: left;
+  padding-top: 0.34rem;
+  padding-bottom: 0.36rem;
+}
+#infromations .photo .photoEare .img {
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url(../../img/wx/photo.png) center center no-repeat;
+  background-size:100% 100%;
+}
+#infromations .photo .photoEare .img img {
+  display: block;
+  width: 1.6rem;
+  height:1.6rem;
+}
+#infromations .photo .photoEare span {
+  display: block;
+  width: 1.6rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  background: #DC6A81;
+  text-align: center;
+  color: white;
+  font-size: 0.22rem;
+  border-radius: 0.2rem;
+  margin-top: 0.27rem;
+}
+#infromations .photo .idCardFace {
+  padding-left: 0.9rem;
+}
+#infromations .photo .idCardBack {
+  padding-left: 1.4rem;
+}
+#infromations .photo .empty {
+  width: 100%;
+  height: 0.1rem;
+  background: #eaeaea;
+  clear: both;
+}
+#repay .secondHeader h2 {
+  width: 5.24rem;
+}
+#repay .repayDetails {
+  width: 100%;
+  height: 2.4rem;
+  background: #ec7487;
+}
+#repay .repayDetails .repayTop {
+  width: 6rem;
+  height: 1.08rem;
+  margin: 0 auto;
+  padding-top: 0.33rem;
+  padding-bottom: 0.22rem;
+}
+#repay .repayDetails .repayTop .leftS {
+  display: block;
+  width: 1.5rem;
+  line-height: 0.8rem;
+  margin-top: 0.18rem;
+  float: left;
+  font-size: 0.28rem;
+  color: white;
+  text-align: center;
+  background: url(../../img/wxkhd/borderLine.png) right center no-repeat;
+}
+#repay .repayDetails .repayTop .rightCon {
+  width: 4.5rem;
+  height: 1.08rem;
+  float: left;
+}
+#repay .repayDetails .repayTop .rightCon p {
+  width: 100%;
+  height: 0.54rem;
+  font-size: 0.22rem;
+  color: white;
+}
+#repay .repayDetails .repayTop .rightCon p span {
+  display: block;
+  float: left;
+  width: 2rem;
+  line-height: 0.54rem;
+  padding-left: 0.25rem;
+}
+#repay .repayDetails .repayTop .rightCon p span i {
+  font-style: normal;
+}
+#repay .repayDetails .repayWay {
+  width: 6rem;
+  height: 0.54rem;
+  margin: 0 auto;
+  background: #ffc3cd;
+  border-radius: 5px;
+  color: #DB6A7E;
+}
+#repay .repayDetails .repayWay span {
+  display: block;
+  float: left;
+  width: 2.45rem;
+  line-height: 0.54rem;
+  font-size: 0.22rem;
+  padding-left: 0.55rem;
+}
+#repay .details {
+  width: 6rem;
+  height: 0.8rem;
+  margin: 0 auto;
+}
+#repay .details span {
+  display: block;
+  width: 1.5rem;
+  float: left;
+  line-height: 0.8rem;
+  font-size: 0.24rem;
+}
+#repay .details a {
+  display: block;
+  width: 2rem;
+  line-height: 0.8rem;
+  float: right;
+  font-size: 0.24rem;
+  color: #979797;
+  text-align: right;
+}
+#repay ul {
+  width: 100%;
+  height: auto;
+}
+#repay ul li {
+  width: 100%;
+  height: 1.21rem;
+  margin: 0 auto;
+  margin-bottom: 0.19rem;
+  background: url(../../img/wxkhd/repay.png) #e0dedf 5.2rem center no-repeat;
+  background-size: 1.03rem;
+}
+#repay ul li span {
+  display: block;
+  float: left;
+  font-size: 0.24rem;
+}
+#repay ul li .per {
+  width: 0.9rem;
+  padding-left: 0.2rem;
+  line-height: 1.21rem;
+  color: #7b797a;
+  text-align: center;
+}
+#repay ul li .time {
+  width: 0.7rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  border: 1px solid #85D8CE;
+  margin-left: 0.2rem;
+  border-radius: 0.1rem;
+  margin-top: 0.4rem;
+  color: #aaa8a9;
+}
+#repay ul li .time i {
+  color: #85D8CE;
+}
+#repay ul li .price {
+  width: 1rem;
+  padding-left: 2.2rem;
+  line-height: 1.21rem;
+  color: #cd9faa;
+}
+#repay ul li:nth-of-type(3) {
+  background: url(../../img/wxkhd/repayed.png) #ffffff 5.2rem center no-repeat;
+  background-size: 1.03rem;
+}
+#withHold .secondHeader h2 {
+  width: 5.24rem;
+}
+#withHold .goodsList {
+  width: 100%;
+  height: auto;
+}
+#withHold .goodsList ul {
+  width: 100%;
+  height: auto;
+}
+#withHold .goodsList ul li {
+  width: 100%;
+  height: 1.6rem;
+  margin-top: 0.18rem;
+  background: url(../../img/wxkhd/xiala.png) white right center no-repeat;
+  background-size: 0.42rem;
+}
+#withHold .goodsList ul li .left {
+  width: 1.7rem;
+  height: 1.6rem;
+  float: left;
+  background: url(../../img/wxkhd/overdue.png) center center no-repeat;
+  background-size: 100% 100%;
+}
+#withHold .goodsList ul li .right {
+  width: 4.6rem;
+  height: 1.6rem;
+  float: left;
+}
+#withHold .goodsList ul li .right p {
+  width: 4.6rem;
+  padding-left: 0.15rem;
+}
+#withHold .goodsList ul li .right .serveType {
+  padding-top: 0.24rem;
+  line-height: 0.42rem;
+  font-size: 0.26rem;
+}
+#withHold .goodsList ul li .right .loanAmount {
+  line-height: 0.4rem;
+  font-size: 0.22rem;
+  color: #959595;
+}
+#withHold .goodsList ul li .right .loanAmount span:nth-of-type(2) {
+  padding-left: 0.2rem;
+}
+#withHold .goodsList ul li .right .monthPay {
+  line-height: 0.4rem;
+  font-size: 0.22rem;
+  color: #959595;
+}
+#withHold .goodsList ul li .right .monthPay span:nth-of-type(2) {
+  padding-left: 0.2rem;
+  color: #DC6A81;
+}
+/*# sourceMappingURL=qzdClient.css.map */

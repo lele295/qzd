@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  font-size: 14px;
+  font-family: "微软雅黑";
+  background: #f5f5f5;
+}
+ul,
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+#header {
+  width: 100%;
+  background: #f5f5f5;
+}
+#header .header {
+  width: 1102px;
+  height: 120px;
+  margin: 0 auto;
+}
+#header .header img{
+    float: left;
+    padding-top: 40px;
+    width: 144px;
+    display: inline-block;
+    float: left;
+}
+
+#header .header ul {
+  width: 409px;
+  padding-top: 66px;
+  float: right;
+}
+#header .header ul li {
+  float: left;
+}
+#header .header ul li a {
+  display: block;
+  height: 16px;
+  line-height: 16px;
+  font-size: 16px;
+  padding: 0 26px;
+  color: #515151;
+  border-right: 1px solid #4e4e4e;
+}
+#header .header ul li .lastA {
+  border-right: none;
+  padding-right: 0;
+}
+#header .header ul li a:hover span {
+  display: block;
+  line-height: 16px;
+  border-bottom: 2px solid #db6983;
+}
+#link {
+  width: 100%;
+  height: auto;
+  background: #ebebeb;
+  color: #525252;
+}
+#link .link {
+  width: 1102px;
+  height: 108px;
+  margin: 0 auto;
+}
+#link .link .div {
+  height: 100%;
+}
+#link .link .contact{
+	width:330px;
+	height: 108px;
+	float: left;
+}
+#link .link .contact .contactUs{
+	width: 330px;
+	height: 24px;
+	padding-top: 36px;
+	
+}
+#link .link .contact .contactUs p{
+	line-height: 24px;
+	font-size: 12px;
+}
+#link .link .contact .txt1 {
+  width: 140px;
+  float: left;
+}
+#link .link .contact .txt1 p {
+  width: 100%;
+  font-size: 12px;
+
+}
+#link .link .contact .txt2 {
+  width: 188px;
+  float: left;
+}
+#link .link .contact .txt2 p {
+  width: 100%;
+  padding-left: 40px;
+  font-size: 12px;
+}
+#link .link .txt3 {
+  width: 196px;
+  float: left;
+  padding-left: 376px;
+}
+#link .link .txt3 p {
+  width: 100%;
+  text-align: center;
+  line-height: 24px;
+  font-size: 12px;
+}
+#link .link .txt3 .fristP {
+  padding-top: 32px;
+}
+#link .link .code1 {
+  width: 90px;
+  height: 80px;
+  float: left;
+  padding-left: 15px;
+  margin-top: 16px;
+  background: url(../../img/pcImg/line.png) right center no-repeat;
+}
+#link .link .code1 img {
+    width: 100%;
+    height: 100%;
+}
+#link .link .code2 {
+  width: 80px;
+  height: 80px;
+  float: left;
+  padding-left: 13px;
+  padding-top: 16px;
+}
+/*# sourceMappingURL=proIntro.css.map */
